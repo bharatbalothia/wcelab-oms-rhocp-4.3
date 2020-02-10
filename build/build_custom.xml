@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+ <project name="Build Script For General Motors" default="main" basedir=".">
+ 
+	<import file="smcfsear_build.xml" />
+	
+	 <property file="project_custom.properties"/>
+	 <property environment="env" />
+	 
+ <!-- Main delegator --> 
+ <target name="main" depends="apply.customizations-step1,apply.customizations-step2" />
+ 
+  </project> 
